@@ -16,14 +16,6 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
-
-test {
-	useJUnitPlatform()
-	testImplementation('org.springframework.boot:spring-boot-starter-test') {
-		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
-	}
-}
-
 ext{
       buildId=System.currentTimeMillis()
 }
@@ -49,3 +41,11 @@ test {
 		}
 	}
 }
+
+
+// test {
+// 	useJUnitPlatform()
+// 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
+// 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+// 	}
+// }
