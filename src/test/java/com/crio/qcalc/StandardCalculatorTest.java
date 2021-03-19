@@ -8,6 +8,7 @@ import org.junit.jupiter.api.function.Executable;
 
 
 public class StandardCalculatorTest {
+ 
 
     @Test
 void testAdd() {
@@ -23,12 +24,16 @@ void testAdd() {
 void testSubtract() {
 
     StandardCalculator calc = new StandardCalculator();
-
+    
     calc.subtract(1, 1);
 
     assertEquals(0, calc.getResult());
 
 }
+// @Test
+// void testResult(){
+   
+// }
 
 
 
