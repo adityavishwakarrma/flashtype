@@ -47,18 +47,14 @@ void testResult(){
 	@Test
 	void testAdditionOverflow() {
 
-
 		StandardCalculator calc = new StandardCalculator();
 		
 		assertThrows(ArithmeticException.class, new Executable(){
 			@Override
 			public void execute() throws Throwable {
 				calc.add(Integer.MAX_VALUE, 1);
-				//throw new ArithmeticException();
 			}
 		});
-
-
 	}
 
 

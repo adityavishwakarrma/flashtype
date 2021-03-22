@@ -18,7 +18,7 @@ public class DemoApplication {
        StandardCalculator calc = new StandardCalculator();
 
         calc.add(1, 2);
-       //calc.add(Integer.MAX_VALUE, 1);
+       
 
 
        System.out.println(calc.getResult());

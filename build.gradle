@@ -1,12 +1,17 @@
+
 plugins {
-	id 'org.springframework.boot' version '2.4.3'
-	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'org.springframework.boot' version '2.3.1.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
 	id 'java'
+}
+
+ext {
+	buildId = System.currentTimeMillis()
 }
 
 group = 'com.crio'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '8'
+sourceCompatibility = '1.8'
 
 repositories {
 	mavenCentral()
@@ -14,10 +19,9 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-}
-ext{
-      buildId=System.currentTimeMillis()
+	testImplementation('org.springframework.boot:spring-boot-starter-test') {
+		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+	}
 }
 
 test {
@@ -41,11 +45,3 @@ test {
 		}
 	}
 }
-
-
-// test {
-// 	useJUnitPlatform()
-// 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
-// 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
-// 	}
-// }
