@@ -48,8 +48,9 @@ public class ScientificCalculator extends StandardCalculator {
            this.divide((double)a , (double)b);
        }
 
-    public void pow(double a, double b)
+    public void Pow(double a, double b)
     {
-        this.result = pow(a, b);
+        ScientificCalculator calc = new ScientificCalculator();
+        this.result =java.lang.Math.pow(a,b);
     }
 }

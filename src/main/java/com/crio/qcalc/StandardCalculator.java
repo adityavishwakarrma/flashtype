@@ -16,7 +16,7 @@ public class StandardCalculator {
     
     }    
 
-    public int getResult() {
+    public double getResult() {
 
         return result;
  
