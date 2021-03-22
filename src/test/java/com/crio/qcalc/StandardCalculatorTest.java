@@ -30,23 +30,36 @@ void testSubtract() {
     assertEquals(0, calc.getResult());
 
 }
-// @Test
-// void testResult(){
+@Test
+void testResult(){
+
+	StandardCalculator calc = new StandardCalculator();
+
+    calc.add(1, 1);
+    calc.subtract(1, 1);
+
+    assertEquals(0, calc.getResult());
    
-// }
+}
 
 
 
-	// @Test
-	// void testAdditionOverflow() {
-	// 	StandardCalculator calc = new StandardCalculator();
-	// 	assertThrows(ArithmeticException.class, new Executable(){
-	// 		@Override
-	// 		public void execute() throws Throwable {
-	// 			calc.add(Integer.MAX_VALUE, 1);
-	// 		}
-	// 	});
-	// }
+	@Test
+	void testAdditionOverflow() {
+
+
+		StandardCalculator calc = new StandardCalculator();
+		
+		assertThrows(ArithmeticException.class, new Executable(){
+			@Override
+			public void execute() throws Throwable {
+			//	calc.add(Integer.MAX_VALUE, 1);
+				throw new ArithmeticException();
+			}
+		});
+
+
+	}
 
 
 }

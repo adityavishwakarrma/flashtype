@@ -11,14 +11,14 @@ public class DemoApplication {
 		System.out.println("Hello world!");
 
 		
-		 SpringApplication.run(DemoApplication.class, args);
+		// SpringApplication.run(DemoApplication.class, args);
 
         System.out.println("Starting QCalc..");
 
        StandardCalculator calc = new StandardCalculator();
 
-       // calc.add(1, 2);
-       calc.add(Integer.MAX_VALUE, 1);
+        calc.add(1, 2);
+       //calc.add(Integer.MAX_VALUE, 1);
 
 
        System.out.println(calc.getResult());
