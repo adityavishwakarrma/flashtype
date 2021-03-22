@@ -22,7 +22,7 @@ public class ScientificCalculatorTest {
     void testAddOverride() {
         ScientificCalculator scientificCalculator = Mockito.mock(ScientificCalculator.class);
         scientificCalculator.add(1d, 1d);
-        verify(scientificCalculator).add(1f, 1f);
+		verify(scientificCalculator).add(1f, 1f);
     }
 
 	@Test
