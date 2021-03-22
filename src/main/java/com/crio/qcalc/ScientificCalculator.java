@@ -7,6 +7,12 @@ public class ScientificCalculator extends StandardCalculator {
    public void add(double a,double b )
    {
        this.result = a+b;
+
+      // long temp = (long) a + (long) b;
+
+    if (this.result > Integer.MAX_VALUE)
+
+        throw new ArithmeticException();
    }
 
     @Override
