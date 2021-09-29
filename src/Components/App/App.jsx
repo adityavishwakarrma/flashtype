@@ -14,7 +14,6 @@ class App extends React.Component {
         return (
         <div>
             <Header headtitle={this.state.headerText}/>
-            {/* headtitle is a props */}
             <SearchBox/>
         </div>
         );
