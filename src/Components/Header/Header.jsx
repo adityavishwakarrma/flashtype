@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css'
 
-const Header = () => {
+const Header = (props) => {
     return (
         <div className="head-container">
             <img 
@@ -9,7 +9,7 @@ const Header = () => {
              className="head-image" 
              alt="headImage"
             />
-            <h1 className ="head-text">Name-It!</h1>
+            <h1 className ="head-text">{props.headtitle}</h1>
         </div>
     );
 };

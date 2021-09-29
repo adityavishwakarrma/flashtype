@@ -6,21 +6,14 @@ import './App.css';
 
 class App extends React.Component {
     state = {
-        headerText: "this is a cool app!"
+        headerText: "Name-It!"
     };
 
     render () {
         return (
         <div>
-            <Header/>
-            <h3>{this.state.headerText}</h3>
-            <button onClick={() => {
-               this.setState({
-                   headerText : "Woaah, Its a new headerText "
-               });
-            }}
-        >
-            Magic happens here!</button>
+            <Header headtitle={this.state.headerText}/>
+            {/* headtitle is a props */}
         </div>
         );
     }
