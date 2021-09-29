@@ -13,7 +13,14 @@ class App extends React.Component {
         return (
         <div>
             <Header/>
-            {}
+            <h3>{this.state.headerText}</h3>
+            <button onClick={() => {
+               this.setState({
+                   headerText : "Woaah, Its a new headerText "
+               });
+            }}
+        >
+            Magic happens here!</button>
         </div>
         );
     }
