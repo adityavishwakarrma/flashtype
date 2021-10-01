@@ -2,7 +2,7 @@
   "name": "name-it",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://adityavishwakarrma.github.io/nameit",
+  "homepage": "https://adityakumaarvishwakarma.github.io/COHORT_ME_QCALC_ENROLL_1613712906890/adityakumaarvishwakarma-me_qcalc",
   "dependencies": {
     "@rstacruz/startup-name-generator": "^0.3.0",
     "@testing-library/jest-dom": "^5.14.1",
@@ -19,7 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "master -d build"
   },
   "eslintConfig": {
     "extends": [
