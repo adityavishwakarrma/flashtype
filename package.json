@@ -2,7 +2,6 @@
   "name": "flashtype",
   "version": "0.1.0",
   "private": true,
-  "homepage": "COHORT_ME_QCALC_ENROLL_1613712906890/adityakumaarvishwakarma-me_qcalc",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
